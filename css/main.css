@@ -1,0 +1,140 @@
+body{
+    box-sizing: content-box;
+    background-image: url(../assets/images/background_forest.jpg);
+    font-family: 'NTR', sans-serif;
+}
+
+/*Dejar todo el header linkeable*/
+header{
+    background-color: rgba(18, 97, 216, 0.6);
+    height: 10vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .link-header{
+    color: #ffffff;
+    float: left;
+    font-size: 4.5vh;
+    margin-top: 3mm;
+    text-align: center;
+    text-decoration: none;
+}
+
+header #left{
+    margin-left: 2mm;
+    position: absolute;
+    left: 2%;
+}
+
+#left a{
+    font-size: 4vh;
+    margin-top: 2mm;
+}
+
+#left input{
+    background-color: rgba(198, 205, 216, 0.6);
+    border: none;
+    border-radius: 5%;
+    font-size: 4vh;
+    margin-left: 3mm;
+    margin-top: 3.5mm;
+    text-align: left;
+    width: 50%;
+ }
+
+header #center{
+    font-family: 'Courgette', cursive;
+    position: absolute;
+    left: 45%;
+}
+
+header #right{
+    position: absolute;
+    right: 1%;
+}
+
+#right > a{
+    margin-left: 2mm;
+    margin-top: 1mm;
+    padding: 1.5mm;
+}
+
+div#right > a:last-child{
+    margin-left: 7mm;
+}
+
+/*Ventanas de Listas*/
+section #add-list{
+    background-color: rgb(222, 228, 236, 0.8);
+    border: none;
+    color: rgba(2, 23, 43, 0.9);
+    font-size: 130%;
+    left: 0.5cm;
+    height: 1cm;
+    padding: 1mm 3mm 1mm;
+    position: absolute;
+    text-align: left;
+    text-decoration: none;
+    top: 2.5cm;
+    width: 7cm;
+}
+
+#add-list:hover{
+    background-color: rgba(189, 207, 231, 0.877);
+    border: none;
+    border-radius: 3%;
+}
+
+/*Al hacer click: Id's desde Javascript*/
+#form-box{
+    background-color: rgba(18, 97, 216, 0.95);
+    border-radius: 8%;
+    height: 4cm;
+    position: absolute;
+    top: 2.2cm;
+    width: 8.5cm;
+}
+
+ #form-input{
+    background-color: rgb(222, 228, 236, 0.85);
+    border: none;
+    color: rgba(2, 23, 43, 0.979);
+    font-size: 130%;
+    font-family: 'NTR', sans-serif;
+    left: 1cm;
+    margin: 3mm 4mm 1mm;
+    height: 1cm;
+    padding: 1mm 2mm 1mm;
+    text-align: left;
+    text-decoration: none;
+    width: 7cm;
+}
+
+.form-button{
+    background-color: rgb(222, 228, 236, 0.7);
+    border: none;
+    border-radius: 3%;
+    color: #ffffff;
+    font-size: 120%;
+    margin: 2mm 4mm;
+    padding: 4mm;
+    width: 2cm;
+}
+
+#close-button{
+    background-color: rgba(18, 97, 216, 0.1);
+    border: none;
+    color: #ffffff;
+    font-size: 250%;
+    margin: 2mm 4mm;
+    padding: 1mm;
+}
+
+
+
+
+
