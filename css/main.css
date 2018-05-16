@@ -73,13 +73,13 @@ section #add-list{
     border: none;
     color: rgba(2, 23, 43, 0.9);
     font-size: 130%;
-    left: 0.5cm;
+    margin-left: 0.5cm;
     height: 1cm;
     padding: 1mm 3mm 1mm;
     position: absolute;
     text-align: left;
     text-decoration: none;
-    top: 2.5cm;
+    margin-top: 2.5cm;
     width: 7cm;
 }
 
@@ -93,10 +93,10 @@ section #add-list{
 #form-box{
     background-color: rgba(18, 97, 216, 0.95);
     border-radius: 8%;
-    height: 4cm;
-    position: absolute;
-    top: 2.2cm;
-    width: 8.5cm;
+    float: left;
+    margin-left: 0.5cm;
+    margin-top: 2.2cm;
+    width: 8.2cm;
 }
 
  #form-input{
@@ -106,7 +106,7 @@ section #add-list{
     font-size: 130%;
     font-family: 'NTR', sans-serif;
     left: 1cm;
-    margin: 3mm 4mm 1mm;
+    margin: 3mm 3mm 0;
     height: 1cm;
     padding: 1mm 2mm 1mm;
     text-align: left;
@@ -114,7 +114,7 @@ section #add-list{
     width: 7cm;
 }
 
-.form-button{
+#save-button{
     background-color: rgb(222, 228, 236, 0.7);
     border: none;
     border-radius: 3%;
@@ -134,7 +134,24 @@ section #add-list{
     padding: 1mm;
 }
 
+/*Estilos cuando guardas una lista*/
+section #box-list{
+    background-color: rgba(18, 97, 216, 0.95);
+    float: left;
+    margin-left: 0.5cm;
+    margin-top: 2.2cm;
+    padding: 1mm 2mm;
+    width: 6cm;
+}
 
+#title-list{
+    color: #ffffff;
+    margin: 2mm 3mm 0;
+}
 
+#title-links{
+    color: #4e4d50;
+    margin: 2mm 3mm 0;
+}
 
 

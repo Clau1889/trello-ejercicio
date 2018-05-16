@@ -14,7 +14,7 @@
     <!--Realizar el header estatico con menu linkeable-->
     <header>
         <div id="left">
-            <a href="#" class="link-header"><i class="fab fa-trello"></i> Tableros</a>
+            <a href="#" class="link-header"><i class="fab fa-trello"></i> Boards</a>
             <input class="link-header"></input>
         </div>
         <a id="center" href="#" class="link-header"><i class="fab fa-trello"></i><em> Trello</em></a>
@@ -27,13 +27,14 @@
     </header>
     <!--Realizar las primeras ventanas para agregar listas y tareas-->
     <main>
-        <section id="big-box"> 
-            <section id="add-list-box">
-                <a id="add-list"  href="#"> Add List</a>
-                <!--Aqui debera aparecer el form creado en Javascript-->
-                <section id="section-form"></section>
-            </section>
+        <section id="add-list-box">
+            <a id="add-list"  href="#"> Add a list...</a>
+            <!--Aqui debera aparecer el form creado en Javascript-->
+            <section id="section-form"></section>
+            <!--Aqui contendra el valor de input-->
+            <section id="section-new-list"></section>
         </section>
+        
     </main>
     <script src="js/app.js"></script>
 </body>
