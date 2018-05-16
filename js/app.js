@@ -55,6 +55,18 @@ var save= document.getElementById("save-button");
         //Limpiar el input 
         document.getElementById("form-input").value= ""; 
 
+        var link=document.getElementById("title-links");
+            link.addEventListener('click', function(){
+            var divTextArea= document. createElement('div');
+            var textArea= document.createElement("textArea");
+            var addButton= document.createElement("button");
+            var closeSecondButton= document.createElement("button");
+
+            divList.appendChild(divTextArea);
+            divTextArea.appendChild(textArea);
+            divTextArea.appendChild(addButton);
+            divTextArea.appendChild(closeSecondButton);
+         });
     });
 };
 
