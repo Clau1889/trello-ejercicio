@@ -23,8 +23,8 @@ var formulario= function (e){
     tagDiv.appendChild(tagSecondButton);
     tagForm.appendChild(tagDiv);
     sectionForm.appendChild(tagForm);
+    tagInput.focus();
     sectionForm.style.display= "block";
-
 
     //Agregar evento al close-button
     var close= document.getElementById("close-button");
@@ -57,16 +57,41 @@ var save= document.getElementById("save-button");
 
         var link=document.getElementById("title-links");
             link.addEventListener('click', function(){
+            link.style.display= "none";
+
             var divTextArea= document. createElement('div');
+                divTextArea.setAttribute("id","cont-main");
             var textArea= document.createElement("textArea");
+                textArea.setAttribute("id","text-area");
             var addButton= document.createElement("button");
-            var closeSecondButton= document.createElement("button");
+                addButton.setAttribute("id","add-button");
+                addButton.innerHTML="Add";
+            //var closeSecondButton= document.createElement("button");
+                //closeSecondButton.setAttribute("id","close-second-button");
+                //closeSecondButton.innerHTML = "&times;";
 
             divList.appendChild(divTextArea);
             divTextArea.appendChild(textArea);
+            textArea.focus();
             divTextArea.appendChild(addButton);
-            divTextArea.appendChild(closeSecondButton);
-         });
+                
+                
+           //Contenedor del valor de TextArea
+            var addValue= document.getElementById("add-button");
+                addValue.addEventListener('click', function(e){
+                e.preventDefault();
+
+                var contText= document.getElementById("text-area").value;
+                var textAreaValue= document.createTextNode(contText);
+                var divValueTextArea= document.createElement('div');
+                    divValueTextArea.setAttribute("id","value-textArea");
+                    
+                    divValueTextArea.appendChild(textAreaValue);
+
+                    divList.insertBefore(divValueTextArea, divTextArea);
+                    document.getElementById("text-area").value= "";
+            });
+        });
     });
 };
 
@@ -84,6 +109,5 @@ var limpiar= function(){
 //Primera version: agregar evento al boton.
 var addList= document.getElementById("add-list");
 addList.addEventListener("click",formulario);
-
 
 

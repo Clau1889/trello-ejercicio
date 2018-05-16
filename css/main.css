@@ -139,11 +139,12 @@ section #add-list{
 /*Estilos cuando guardas una lista*/
 section #box-list{
     background-color: rgba(18, 97, 216, 0.95);
+    border-radius: 5%;
     float: left;
     margin-left: 0.5cm;
     margin-top: 2.2cm;
     padding: 1mm 2mm;
-    width: 6cm;
+    width: 8cm;
 }
 
 #title-list{
@@ -156,4 +157,48 @@ section #box-list{
     margin: 2mm 3mm 0;
 }
 
+/*TextArea y botones*/
+#cont-main{
+    position: relative;
+}
 
+#text-area{
+    background-color: #dbd7d7;
+    border: none;
+    border-radius:5%;
+    display: block;
+    height: auto;
+    margin-left: 2mm;
+    width: 90%;
+    word-wrap: break-word;
+}
+
+
+#add-button{
+    background-color: rgb(222, 228, 236, 0.7);
+    border: none;
+    border-radius: 5%;
+    color: #000;
+    margin: 2.0001mm;
+    padding: 2mm;
+    width: 2cm;
+}
+
+#close-second-button{
+    background-color: rgba(18, 97, 216, 0.1);
+    border: none;
+    color: #ffffff;
+    font-size: 200%;
+    margin: 1mm 4mm;
+    padding: 1mm;
+}
+
+/*Div que guarda el valor del textArea*/
+#value-textArea{
+    background-color:rgb(222, 228, 236, 0.5);
+    color: #000000;
+    font-family: 'Tajawal', sans-serif;
+    height: auto;
+    margin: 0 2mm 2mm;
+    width: 90%;
+}
