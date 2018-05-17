@@ -1,6 +1,8 @@
 body{
     box-sizing: content-box;
     background-image: url(../assets/images/background_forest.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
     font-family: 'NTR', sans-serif;
 }
 
